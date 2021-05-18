@@ -1,0 +1,24 @@
+ <%@page import="dtos.UsuarioDTO"%>
+ <%HttpSession sessions = request.getSession();%>
+<nav>
+    <% String usuario = (String) request.getSession().getAttribute("usuario");%>
+            <ul>
+                <a class="logo" href="<%=request.getContextPath()%>/index.jsp">Pelutalles </a>
+                <center>
+                <li><a href="index.jsp"> Inicio </a> </li>
+                <li><a href="pages/nosotros.jsp"> Nosotros </a> </li>
+                <li><a href="pages/productos.jsp"> Productos </a> </li>
+                <li><a href="pages/contacto.jsp"> Contactanos </a> </li>
+               
+                 <% HttpSession sessionss = request.getSession();
+                        UsuarioDTO usu = (UsuarioDTO)sessions.getAttribute(usuario);
+                        if (usu == null){%>
+                         <a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>
+                        <% }else {%>
+                          <%=usuario%>
+                        <%} %>
+                <!--<a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>-->
+                </center>
+               
+            </ul>
+ </nav> 

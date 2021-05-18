@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        <a class="logo"  href="../index.jsp">Pelutalles </a>
+        <center>
+            <li><a href="../index.jsp"> Inicio </a> </li>
+            <li><a href="nosotros.jsp"> Nosotros </a> </li>
+            <li><a href="productos.jsp"> Productos </a> </li>
+            <li><a href="contacto.jsp"> Contactanos </a> </li>
+            <a  href="<%=request.getContextPath()%>/newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>
+
+        </center>
+
+    </ul>
+</nav> 

@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+  overflow-x: hidden;
+ 
+  text-align: center;
+  
+ 
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: inline-block;
+    float: left;
+    font-size: 32px;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #ff80ab;
+    
+    
+    
+    
+    
+}
+nav{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-bottom: 2px solid #596275;
+    font-family:fantasy;
+    text-transform: uppercase; 
+     
+}
+nav ul{
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 22px 30px;
+    margin-right: 20px;
+    
+   
+}
+nav li a {
+    color:#757575;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:#FFA69E;
+}
+section{
+    height: 100vh;
+}
+.fixed{
+    position: fixed;
+    top:0;
+    height:70px;
+    z-index: 1;
+}
+.pantalla{
+    
+    background-image: url(portada1.jpg);
+    background-size: cover;  
+}
+
+
+
+.pantalla4{
+  background: #ffffff;
+}
+
+
+.dd{
+    position: relative;
+    bottom: 1px;
+}
+
+
+.pantalla2{
+    background: #FFA69E;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+.precio-iz-2{
+    margin-left: 30px;
+    font-family:fantasy;
+    width:23%;
+    align-content:flex-start;   
+    font-size: 60px;
+    text-justify:auto;
+    color: white;
+}
+.precio-de-2{
+    font-size: 60px;
+    text-justify:auto;
+    color: white;
+   
+}
+
+.precio-de-2:hover{
+     transiton:0.5s;
+     color:#000000 ;
+}
+.btnvermas{
+    background: #ffffff ;
+    border: 2px solid #ffffff;
+    width:200px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor:pointer;
+    font-size:15px;
+     text-transform: uppercase;
+}
+.btnvermas:hover{
+    border:2px solid #ffb8b8;
+    background: #ffb8b8;
+    color:white;
+    font-size:15px;
+    transform: translate(0%, 10%);
+    transition: 0.5s;
+}
+
+.producto {
+    transform: translate(-50%, -50%);
+    animation:fly 3s ease-in-out infinite;
+}
+@keyframes fly {
+    0%{
+       transform: translate(0%, -6%);
+    }
+    50%{
+        transform: translate(0%, -4%);
+    }
+    100%{
+        transform: translate(0%, -6%);
+    }
+}
+
+.iconoo{
+    width:50px;
+    height:50px;
+}
+
+/*section 3 */
+
+
+
+/*.pantalla3{
+   background:  #ffffff;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   align-items: flex-start;
+   overflow:hidden;
+  
+}*/
+.box1{
+    width: 33.3%; 
+}
+.box1 img{
+    width:100%;
+    height: 100%;
+}
+.box2{
+    width:33.3%;
+    background: #ffffff;
+    height:50%;
+}
+.box3{
+    width:33.3%;
+    background:  #ffffff;
+    height:50%;
+}
+
+.box11{
+    width:33.3%;
+    background:#55E6C1 ;
+    height:50%;
+}
+.box11 img{
+    margin-top:-54%;
+     width:100%;
+    height: auto;
+    
+}
+.box3 p{
+    margin-top:40px;
+   font-size: 20px;
+   font-family: Roboto;
+   text-transform: uppercase;
+}
+
+/*Formulario login*/
+
+
+footer{
+    background:#34495e;
+    height:500px;
+    color: #ecf0f1;
+}
+.footer{
+
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     
+}
+.redit{
+    margin-right: 12px;
+}
+
+a .msgerror{
+    font-size:80px; 
+    padding:50px;
+}
+
+
+.contendorregistro{
+    height:auto;
+    
+}

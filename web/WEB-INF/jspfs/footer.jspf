@@ -1,0 +1,155 @@
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #546e7a;">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Puedes estar al tanto de las novedades que te traemos siguiendonos en nuestas redes sociales!</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="li-ic" href="https://api.whatsapp.com/send?phone=51994902231&text=Hola%20Quisiera%20más%20información" target="_blank">
+                        <i class="fab fa-whatsapp fa-2x  white-text mr-4"> </i>
+                    </a>
+                    <a href="https://es-la.facebook.com/pages/category/Product-Service/Pelutalles-214094279144430/" class="fb-ic" target="_blank">
+                        <i class="fab fa-2x fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/pelutalles/" target="_blank" class="ins-ic">
+                        <i class="fab fa-2x fa-instagram white-text mr-4"> </i>
+                    </a>
+                    <a class="tw-ic">
+                        <i class="fab  fa-2x fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa-2x fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold">Pelutalles</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>Lo mejor de lo mejor de lo mejor de lo mejor </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Productos</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">1</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">2</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">3</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">4</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Enlaces Directos</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">Tu cuenta</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Nosotros</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Contactanos   </a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Ayuda</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">ContactO</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> Jr Andahuaylas 935 Int-111-112, Lima, US</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> info@pelutalles.com</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 51 01 347 03 34</p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> + 51 01 347 03 34</p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="d-flex justify-content-center  align-items-end "> 
+        <div class="footer-copyright w-100 text-center text-black-50 py-3 dd">© 2019 Copyright:
+            <a class="dark-grey-text" href="www.pelutalles.com"> Pelutalles</a>
+            <a class="dark-grey-text" > Support by Josue </a>
+        </div>
+        <!-- Copyright -->
+    </div>
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+</footer>

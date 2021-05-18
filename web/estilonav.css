@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    margin:0;
+}
+body nav{
+    font-family:fantasy;
+    text-transform: uppercase; 
+    font-size: 24px;
+}
+.logo{
+    display: inline-block;
+    float: left;
+    font-size: 32px;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #ff80ab;
+    font-family:fantasy;
+    text-transform: uppercase;   
+    
+}
+nav{
+    position: relative;
+    bottom:0;
+    width: 100%;
+    height: 70px;
+    background: white;
+     border-bottom: 2px solid #596275;
+     font-family:fantasy;
+    text-transform: uppercase; 
+     
+}
+nav ul{
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 22px 30px;
+    margin-right: 20px;
+    font-family:fantasy;
+    text-transform: uppercase; 
+   
+}
+nav li a {
+    color:#757575;
+    text-transform: uppercase;
+    text-decoration:none;
+    
+}
+nav li a:hover{
+    color:#FFA69E;
+}
+
+
+.formulogin{
+    margin-top: 100px;
+}
+.timi{
+    font-size: 30px;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+.textmi{
+    font-size:30px;
+}
+
+.pt-n5 {
+  padding-top: 180px!important;
+  height: auto;
+}
+
+.espaciotop {
+padding: 50px;
+}
+
+martop{
+    margin-top: 30px;
+    
+}
+panelducto{
+    margin: 30px;
+    top:30px;
+}
+
+.centrogol{
+    display: flex;
+    align-items: center;
+    
+}
+section{
+    heigt:auto;
+}
