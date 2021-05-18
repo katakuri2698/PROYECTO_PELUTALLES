@@ -1,5 +1,5 @@
 
-package miempresa.conexion;
+package conexion;
 
 import daos.UsuarioDAO;
 import dtos.UsuarioDTO;

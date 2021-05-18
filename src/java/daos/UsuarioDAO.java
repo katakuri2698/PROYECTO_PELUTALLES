@@ -9,7 +9,7 @@ import dtos.UsuarioDTO;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import miempresa.conexion.ConexionBD;
+import conexion.ConexionBD;
 
 public class UsuarioDAO {
 
