@@ -7,7 +7,7 @@ public class productoDTO {
     String nombre;
     String img_producto;
     String descripcion;
-    float precio_venta;
+    double precio_venta;
     int stock;
     int id_categoria;
     int id_estado;
@@ -15,7 +15,15 @@ public class productoDTO {
     public productoDTO() {
     }
 
-    public productoDTO(String nombre, String img_producto, String descripcion, float precio_venta, int stock, int id_categoria, int id_estado) {
+    public productoDTO(String nombre, String img_producto, String descripcion, double precio_venta, int stock) {
+        this.nombre = nombre;
+        this.img_producto = img_producto;
+        this.descripcion = descripcion;
+        this.precio_venta = precio_venta;
+        this.stock = stock;
+    }
+
+    public productoDTO(String nombre, String img_producto, String descripcion, double precio_venta, int stock, int id_categoria, int id_estado) {
         this.nombre = nombre;
         this.img_producto = img_producto;
         this.descripcion = descripcion;
@@ -85,7 +93,7 @@ public class productoDTO {
         this.descripcion = descripcion;
     }
 
-    public float getPrecio_venta() {
+    public double getPrecio_venta() {
         return precio_venta;
     }
 

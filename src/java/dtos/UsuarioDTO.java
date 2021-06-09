@@ -14,7 +14,7 @@ public class UsuarioDTO {
     private String nombres;
     private String apellidos;
     private int telefono;
-    private String tipo_usuario;
+    private int tipo_usuario;
     private int estado;
    
 
@@ -25,9 +25,18 @@ public class UsuarioDTO {
         this.usuario = usuario2;
         this.clave = clave;
     }
+
+    public UsuarioDTO(String usuario, String clave, String correo, String nombres, String apellidos, int telefono) {
+        this.usuario = usuario;
+        this.clave = clave;
+        this.correo = correo;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.telefono = telefono;
+    }
   
    
-    public UsuarioDTO(String usuario, String clave, String correo, String nombres, String apellidos, int telefono, String tipo_usuario, int estado) {
+    public UsuarioDTO(String usuario, String clave, String correo, String nombres, String apellidos, int telefono, int tipo_usuario, int estado) {
         this.usuario = usuario;
         this.clave = clave;
         this.correo = correo;
@@ -88,11 +97,11 @@ public class UsuarioDTO {
         this.apellidos = apellidos;
     }
 
-    public String getTipo_usuario() {
+    public int getTipo_usuario() {
         return tipo_usuario;
     }
 
-    public void setTipo_usuario(String tipo_usuario) {
+    public void setTipo_usuario(int tipo_usuario) {
         this.tipo_usuario = tipo_usuario;
     }
 

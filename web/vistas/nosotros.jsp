@@ -24,9 +24,7 @@
                 <!-- Section heading -->
                 <h2 class="h1-responsive font-weight-bold text-center my-5">¿ Qué somos ?  </h2>
                 <!-- Section description -->
-                <p class="grey-text text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+                <p class="grey-text text-center w-responsive mx-auto mb-5">Somos el acompañante perfecto para tus sorpresas para esas personas especial, llevamos más de 3 años en el mercado trayendo las novedades de peluches con los precios justos para tu compra,y puedas seguir sorprendiendo</p>
 
                 <!-- Grid row -->
                 <div class="row">
@@ -34,7 +32,7 @@
                     <!-- Grid column -->
                     <div class="col-lg-5 mb-lg-0 mb-5 wow bounceInLeft">
                         <!--Image-->
-                        <img src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
+                        <img src="https://i.ibb.co/Jj0WJK4/52486625-369251120295411-1354702564276305920-n.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
                     </div>
                     <!-- Grid column -->
 
@@ -43,12 +41,10 @@
 
                         <!-- Grid row -->
                         <div class="row mb-3 ">
-                            <div class="col-md-1 col-2">
-                                <i class="fas fa-plus-circle">.</i>
-                            </div>
+                           
                             <div class="col-md-11 col-10">
                                 <h5 class="font-weight-bold mb-3 timi">Misión</h5>
-                                <p class="grey-text textmi">Brindar a nuestros clientes nuestra mejor atención para así poder ayudarlos a encontrar el mejor regalo perfecto para aquella persona especial.</p>
+                                <p class="grey-text textmi">Brindar a nuestros clientes nuestra mejor atención para así poder ayudarlos a encontrar el mejor regalo perfecto para aquella persona especial y ser su complice en esa sorpresa especial.</p>
 
                             </div>
                         </div>
@@ -70,13 +66,12 @@
 
                         <!-- Grid row -->
                         <div class="row mb-3">
-                            <div class="col-md-1 col-2">
-                                <i class="fas fa-book fa-3x cyan-text"></i>
-                            </div>
+                        
                             <div class="col-md-11 col-10">
                                 <h5 class="font-weight-bold mb-3 timi">Visión</h5>
-                                <p class="grey-text textmi"> Ser una de las empresas líder  en el mercado online y lograr tener varias tiendas por cada región de Perú.</p>
+                                <p class="grey-text textmi"> Ser una de las empresas líder en el mercado del rubro de los peluches y detalles además, lograr formar un lazo con los clientes muy bueno en la cual se sientan identificados con cada compra que realizan con nosotros, y llegara tener varios puntos de venta en el Perú.</p>
                             </div>
+                            
                         </div>
                         <!-- Grid row -->
 
@@ -87,7 +82,7 @@
                     <!-- Grid column -->
                     <div class="col-lg-5 wow bounceInRight">
                         <!--Image-->
-                        <img src="https://mdbootstrap.com/img/Photos/Others/images/82.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
+                        <img src="https://i.ibb.co/djmnmfP/52759744-369251093628747-3937603154861883392-n.jpg"  width="300"  alt="Sample project image" class="img-fluid rounded z-depth-1">
                     </div>
                     <!-- Grid column -->
 
@@ -96,7 +91,7 @@
 
             </section>
         </div>
-        
+        <br><br>  <br><br>  <br><br>  <br><br>
         
         <div class="container">    
             <section class="team-section my-5 pt-n5">

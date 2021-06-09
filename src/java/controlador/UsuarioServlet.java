@@ -5,10 +5,12 @@
  */
 package controlador;
 
-import daos.UsuarioDAO;
+import daos.Usuario2DAO;
 import dtos.UsuarioDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.*;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,53 +18,44 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author LAB-USR-PT116-C509
+ * @author PedroCF
  */
-public class registroservlet extends HttpServlet {
-    
-  String sistema = "pages/sistema.jsp";     
-  String index = "index.jsp";
-  String  login = "newlogin.jsp";
-     
+public class UsuarioServlet extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
            
-        
-            String acceso = "";
+            Usuario2DAO dao= new Usuario2DAO();
+            UsuarioDTO u = new UsuarioDTO();
+            List<UsuarioDTO> datos = new ArrayList<>();
+            String respuesta="";
+            RequestDispatcher rd= null;
             
-            String usuario = request.getParameter("txtUsuario");
+            try {
+              
+                String usuario = request.getParameter("txtUsuario");
             String clave = request.getParameter("txtContrasena");
             String nombres= request.getParameter("txtNombre");
             String apellidos = request.getParameter("txtApellidos");
             int telefono = Integer.parseInt(request.getParameter("txtTelefono"));
             String correo = request.getParameter("txtCorreo");
-            int tipousuario =2;
+            String tipousuario ="Normal";
             int estado = 1;
+            } catch (Exception e) {
+            }
             
-          
-             UsuarioDTO usu = new UsuarioDTO( usuario,clave,correo,nombres,apellidos,telefono,tipousuario,estado);
-           UsuarioDAO agregarusu =new UsuarioDAO();
-             /*
-              if (usuario.trim().isEmpty() || clave.trim().isEmpty()) {
-            String error = "Debera de completar todos los campos";
-            request.getSession().setAttribute("error", error);
-            request.getRequestDispatcher("pages/error.jsp").forward(request, response);
-              }
-            */
-             if(agregarusu.register(usu)!= true){
-             
-             acceso = index;
-             request.getRequestDispatcher(acceso).forward(request, response);
-             
-             
-             }else {
-                     acceso = login;
-                     request.getRequestDispatcher(acceso).forward(request, response);
-                    }
-             
-             
-          
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -56,9 +56,9 @@ public class loginServlet extends HttpServlet {
               
                     
                 if (login.login(usuarios)) {
-                    if(usuario.equalsIgnoreCase("pedro") && clave.equalsIgnoreCase("1234") ){
+                    if( usuario.equalsIgnoreCase("pedro") && clave.equalsIgnoreCase("1234") ){
                     request.getSession().setAttribute("usuario", usuarios.getUsuario());
-                    request.getRequestDispatcher("pages/sistema.jsp").forward(request, response);
+                    request.getRequestDispatcher("vistas/sistema.jsp").forward(request, response);
                         }
                     else {
                     request.getSession().setAttribute("usuario", usuarios.getUsuario());

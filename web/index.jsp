@@ -14,14 +14,13 @@
         
         <link rel="icon" type="image/png" href="https://i.ibb.co/dDf8F7s/logo.png" />
         <%@include file="WEB-INF/jspfs/css.jspf"  %>
-        <link href="estilos.css" rel="stylesheet" type="text/css"/>
         <%@include file="WEB-INF/jspfs/meta.jspf"  %>  
-        <link href="<%=request.getContextPath()%>/estilos.css" rel="stylesheet" type="text/css"/>
+   
         
     </head>
     <body>
         <%@include file="WEB-INF/jspfs/header.jspf"  %>
-        <%@include file="WEB-INF/jspfs/nav.jspf"  %>
+        
         
     
 

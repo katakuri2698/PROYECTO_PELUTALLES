@@ -21,8 +21,7 @@
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos </h2>
     <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+    <p class="text-center w-responsive mx-auto mb-5">Puedes contactarte con nosootros llenando este formulario, cómo tambien puedes llamarnos y coordinar una cita en nuestra tienda física, estamos a total dispoción de ayudarte a escoger el mejor regalo</p>
 
     <div class="row">
 

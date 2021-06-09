@@ -2,19 +2,31 @@
  <%HttpSession sessions = request.getSession();%>
 <nav>
     <% String usuario = (String) request.getSession().getAttribute("usuario");%>
+    
+    
             <ul>
                 <a class="logo" href="<%=request.getContextPath()%>/index.jsp">Pelutalles </a>
                 <center>
                 <li><a href="index.jsp"> Inicio </a> </li>
-                <li><a href="pages/nosotros.jsp"> Nosotros </a> </li>
-                <li><a href="pages/productos.jsp"> Productos </a> </li>
-                <li><a href="pages/contacto.jsp"> Contactanos </a> </li>
+                <li><a href="vistas/nosotros.jsp"> Nosotros </a> </li>
+                <li><a href="vistas/productos.jsp"> Productos </a> </li>
+                <li><a href="vistas/contacto.jsp"> Contactanos </a> </li>
                
                  <% HttpSession sessionss = request.getSession();
                         UsuarioDTO usu = (UsuarioDTO)sessions.getAttribute(usuario);
                         if (usu == null){%>
-                         <a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>
-                        <% }else {%>
+                         <a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">nuevo</a>
+                      
+                        
+                         <li class="nav-item dropdown">
+                        <a class="nav-link  md-pills" data-toggle="dropdown" href="CerrarSession" role="button" aria-haspopup="true"
+                           aria-expanded="false"><%=usuario%></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <a class="dropdown-item" href="CerrarSession">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                      <% }else {%>
                           <%=usuario%>
                         <%} %>
                 <!--<a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>-->
@@ -22,3 +34,4 @@
                
             </ul>
  </nav> 
+                        <%@include file="../WEB-INF/jspfs/js.jspf"  %>

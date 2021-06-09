@@ -22,9 +22,9 @@
                 <a class="logo" href="<%=request.getContextPath()%>/index.jsp">Pelutalles </a>
                 <center>
                     <li><a href="index.jsp"> Inicio </a> </li>
-                    <li><a href="pages/nosotros.jsp"> Nosotros </a> </li>
-                    <li><a href="pages/productos.jsp"> Productos </a> </li>
-                    <li><a href="pages/contacto.jsp"> Contactanos </a> </li>
+                    <li><a href="vistas/nosotros.jsp"> Nosotros </a> </li>
+                    <li><a href="vistas/productos.jsp"> Productos </a> </li>
+                    <li><a href="vistas/contacto.jsp"> Contactanos </a> </li>
                    
                    
                      
@@ -71,10 +71,9 @@
 
                             <!-- Grid column -->
                             <div class="col-10">
-                                <h5 class="font-weight-bold mb-3">Modificar usuarios</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-                                    nam, aperiam minima assumenda deleniti hic.</p>
-                                <a href="pages/usuListar.jsp">   <button type="button"  class="btn btn-secondary">Ir a</button></a>
+                                <h5 class="font-weight-bold mb-3">Operacionesd</h5>
+                                <p class="grey-text">En este módulo podrás administrar las cuenta relacionadas al sistema</p>
+                                <a href="vistas/VistaUsuario/usuListar.jsp">   <button type="button"  class="btn btn-secondary">Ir a</button></a>
                             </div>
                             <!-- Grid column -->
 
@@ -92,7 +91,7 @@
 
                             <!-- Grid column -->
                             <div class="col-10">
-                                <h5 class="font-weight-bold mb-3">Agregar productos</h5>
+                                <h5 class="font-weight-bold mb-3">Generación de Reportes</h5>
                                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
                                     nam, aperiam minima assumenda deleniti hic.</p>
                                 <button type="button" class="btn btn-secondary">Ir a</button>

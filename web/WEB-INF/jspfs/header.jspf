@@ -4,11 +4,11 @@
             <a class="logo" href="<%=request.getContextPath()%>/index.jsp">Pelutalles </a>
             <ul>
                 
-                <center>
+                <center class="header">
                     <li><a href=""> Inicio </a> </li>
-                    <li><a href="./pages/nosotros.jsp"> Nosotros </a> </li>
-                    <li><a href="./pages/productos"> Productos </a> </li>
-                    <li><a href="../pages/contacto.jsp"> Contactanos </a> </li>
+                    <li><a href="./vistas/nosotros.jsp"> Nosotros </a> </li>
+                    <li><a href="./vistas/productos"> Productos </a> </li>
+                    <li><a href="./vistas/contacto.jsp"> Contactanos </a> </li>
 
                     <a  href="newlogin.jsp" class="btn btn-outline-pink accent-1  waves-effect">Login</a>
                 </center>

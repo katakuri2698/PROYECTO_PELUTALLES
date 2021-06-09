@@ -5,8 +5,6 @@
  */
 package controlador;
 
-import daos.UsuarioDAO;
-import dtos.UsuarioDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -14,55 +12,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author LAB-USR-PT116-C509
- */
-public class registroservlet extends HttpServlet {
-    
-  String sistema = "pages/sistema.jsp";     
-  String index = "index.jsp";
-  String  login = "newlogin.jsp";
-     
+
+public class Controlador extends HttpServlet {
+
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-           
-        
-            String acceso = "";
-            
-            String usuario = request.getParameter("txtUsuario");
-            String clave = request.getParameter("txtContrasena");
-            String nombres= request.getParameter("txtNombre");
-            String apellidos = request.getParameter("txtApellidos");
-            int telefono = Integer.parseInt(request.getParameter("txtTelefono"));
-            String correo = request.getParameter("txtCorreo");
-            int tipousuario =2;
-            int estado = 1;
-            
-          
-             UsuarioDTO usu = new UsuarioDTO( usuario,clave,correo,nombres,apellidos,telefono,tipousuario,estado);
-           UsuarioDAO agregarusu =new UsuarioDAO();
-             /*
-              if (usuario.trim().isEmpty() || clave.trim().isEmpty()) {
-            String error = "Debera de completar todos los campos";
-            request.getSession().setAttribute("error", error);
-            request.getRequestDispatcher("pages/error.jsp").forward(request, response);
-              }
-            */
-             if(agregarusu.register(usu)!= true){
-             
-             acceso = index;
-             request.getRequestDispatcher(acceso).forward(request, response);
-             
-             
-             }else {
-                     acceso = login;
-                     request.getRequestDispatcher(acceso).forward(request, response);
-                    }
-             
-             
-          
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Controlador</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet Controlador at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

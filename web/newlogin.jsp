@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="dtos.UsuarioDTO"%>
+<% String usuario = (String) request.getSession().getAttribute("usuario");%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,10 +9,40 @@
         <%@include file="WEB-INF/jspfs/css.jspf"  %>
         <link href="estilonav.css" rel="stylesheet" type="text/css"/>
         <%@include file="WEB-INF/jspfs/meta.jspf"  %>  
+        
+        
 
     </head>
     <body>
+       
+       
+                 <nav>
+            <ul>
+                <a class="logo" href="<%=request.getContextPath()%>/index.jsp">Pelutalles </a>
+                <center>
+                    <li><a href="index.jsp"> Inicio </a> </li>
+                    <li><a href="pages/nosotros.jsp"> Nosotros </a> </li>
+                    <li><a href="pages/productos.jsp"> Productos </a> </li>
+                    <li><a href="pages/contacto.jsp"> Contactanos </a> </li>
+                   
+                   
+                     
+                     
+                     
+                    <li class="nav-item dropdown  ">
+                        <a class="nav-link  md-pills" data-toggle="dropdown" href="CerrarSession" role="button" aria-haspopup="true"
+                           aria-expanded="false"><%=usuario%></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <a class="dropdown-item" href="CerrarSession">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                   
+                </center>
 
+            </ul>
+        </nav> 
+<!--
         <nav>
             <ul>
                 <a class="logo" href="index.jsp">Pelutalles </a>
@@ -23,9 +55,9 @@
                 </center>
 
             </ul>
-        </nav> 
-        <%@include file="WEB-INF/jspfs/js.jspf"  %>
-
+        </nav> -->
+    
+        <%@include file="../WEB-INF/jspfs/js.jspf"  %>
         <div class="container ">
             <div class="row espaciotop">
                 
@@ -44,8 +76,6 @@
                                 <input type="password" class="form-control" id="txtClave" name="txtClave" placeholder="Password">
                             </div>
                             
-                            
-                           
                             <div class="form-group form-check">
                                <button type="submit" class="btn btn-block btn-primary">Iniciar Sesion</button>
                             
@@ -55,12 +85,11 @@
                     </div>
                     <div class="col-12 col-lg-4"></div>
 
-
                 </div>
         </div>
 
 
-        <%@include file="WEB-INF/jspfs/js.jspf"  %>
+        <%@include file="./WEB-INF/jspfs/js.jspf"  %>
         <!-- Material form login -->
         <script>
             $(document).ready(function () {

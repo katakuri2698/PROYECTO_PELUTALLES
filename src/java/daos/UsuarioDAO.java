@@ -13,11 +13,11 @@ import conexion.ConexionBD;
 
 public class UsuarioDAO {
 
-    private static final String sql_login = "select * from USUARIOS where usuario=? and clave=?";
-    private static final String sql_insert = "insert into  USUARIOS (usuario,clave,correo,nombres,apellidos,telefono) values (?,?,?,?,?,?)";
-    private static final String sql_update = "update USUARIOS set usuario= ?,clave= ?,correo= ?,nombres= ?,apellidos= ?,telefono= ?,tipo_usuario= ?,estado= ?"
+    private static final String sql_login = "select * from USUARIO where usuario=? and clave=?";
+    private static final String sql_insert = "insert into  USUARIO (USUARIO,CLAVE,CORREO,NOMBRES,APELLIDOS,TELEFONO,ID_TIPOUSUARIO,ID_ESTADO) values (?,?,?,?,?,?,?,?)";
+    private static final String sql_update = "update USUARIO set usuario= ?,clave= ?,correo= ?,nombres= ?,apellidos= ?,telefono= ?,tipo_usuario= ?,estado= ?"
             + "where id_usuario=?";
-    private static final String sql_eliminar ="delete from USUARIOS where id_usuario = ? ";
+    private static final String sql_eliminar ="delete from USUARIO where id_usuario = ? ";
     
     private static PreparedStatement pstm = null; // Colocar y ejecutar consulta en el servidor de base de datos
     private static ResultSet res = null;
@@ -74,6 +74,8 @@ public class UsuarioDAO {
             pstm.setString(4, usuario.getNombres());
             pstm.setString(5, usuario.getApellidos());
             pstm.setInt(6, usuario.getTelefono());
+            pstm.setInt(7, usuario.getTipo_usuario());
+            pstm.setInt(8, usuario.getEstado());
             //pstm.setString(6, usuario.getTipo_usuario());
             //pstm.setInt(8, usuario.getEstado());
             if (pstm.executeUpdate() > 0) {
@@ -109,7 +111,7 @@ public class UsuarioDAO {
             pstm.setString(4, usuario.getNombres());
             pstm.setString(5, usuario.getApellidos());
             pstm.setInt(6, usuario.getTelefono());
-            pstm.setString(7, usuario.getTipo_usuario());
+            pstm.setInt(7, usuario.getTipo_usuario());
             pstm.setInt(8, usuario.getEstado());
            
        

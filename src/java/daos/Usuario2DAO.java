@@ -19,16 +19,16 @@ import conexion.Database;
  *
  * @author PedroCF
  */
-public class ProductoDAO implements OperacionesBD {
+public class Usuario2DAO implements OperacionesBD {
         
     Database db = new Database();
     @Override
     public String insertar(Object obj) {
         
-        productoDTO prod = (productoDTO) obj;
+        UsuarioDTO p = (UsuarioDTO) obj;
         Connection conn;
         PreparedStatement pst;
-        String sql ="INSERT INTO producto values (?,?,?,?,?,?,?);";
+        String sql ="INSERT INTO USUARIO values (?,?,?,?,?,?,?);";
         String respuesta ="";
         
         try {
@@ -40,13 +40,14 @@ public class ProductoDAO implements OperacionesBD {
             );
             //Conectarme al SQL
             pst=conn.prepareStatement(sql);
-            pst.setString(1,prod.getNombre());
-            pst.setString(2, prod.getImg_producto());
-            pst.setString(3, prod.getDescripcion());
-            pst.setDouble(4, prod.getPrecio_venta());
-            pst.setInt(5,prod.getStock());
-            pst.setInt(6,prod.getId_categoria());
-            pst.setInt(7,prod.getId_estado());
+            pst.setString(1,p.getUsuario());
+            pst.setString(2,p.getClave());
+            pst.setString(3,p.getCorreo() );
+            pst.setString(4,p.getNombres() );
+            pst.setString(5,p.getApellidos() );
+            pst.setInt(6,p.getTelefono());
+            pst.setInt(7,1);
+            pst.setInt(8,1);
             pst.executeUpdate();
             respuesta = "Se registro el elemento";
             conn.close();
